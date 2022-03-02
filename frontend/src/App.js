@@ -65,7 +65,7 @@ function App() {
               <i className="fa fa-bars"></i>
             </button>
             <Link className="brand" to="/">
-              amazona
+              DGLINK GEOSPATIAL
             </Link>
           </div>
           <div>
@@ -314,7 +314,7 @@ function App() {
         </main>
         <footer className="row center">
           {userInfo && !userInfo.isAdmin && <ChatBox userInfo={userInfo} />}
-          <div>All right reserved</div>{' '}
+          <div>All right reserved dglinks 2021</div>{' '}
         </footer>
       </div>
     </BrowserRouter>
