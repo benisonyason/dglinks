@@ -22,7 +22,7 @@ import UserListScreen from './screens/UserListScreen';
 import UserEditScreen from './screens/UserEditScreen';
 import SellerRoute from './components/SellerRoute';
 import SellerScreen from './screens/SellerScreen';
-import SearchBox from './components/SearchBox';
+// import SearchBox from './components/SearchBox';
 import SearchScreen from './screens/SearchScreen';
 import { listProductCategories } from './actions/productActions';
 import LoadingBox from './components/LoadingBox';
@@ -68,9 +68,9 @@ function App() {
               DGLINK GEOSPATIAL
             </Link>
           </div>
-          <div>
+          {/* <div>
             <SearchBox />
-          </div>
+          </div> */}
           <div>
             <Link to="/cart">
               Cart

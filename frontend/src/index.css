@@ -5,7 +5,7 @@ html {
 body {
   margin: 0;
   height: 100vh;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -27,7 +27,8 @@ body {
 }
 header {
   grid-area: header;
-  background-color: #203040;
+  background-color: #71a3ee;
+  height: fit-content;
 }
 main {
   grid-area: main;
@@ -85,7 +86,7 @@ button:hover {
   border: 0.1rem #404040 solid;
 }
 button.primary {
-  background-color: #f0c040;
+  background-color: #7ae671;
 }
 button.block {
   width: 100%;
@@ -315,12 +316,9 @@ img.large {
 /* Search */
 .search button {
   border-radius: 0 0.5rem 0.5rem 0;
-  border-right: none;
-  margin-right: 0.5rem;
 }
 .search input {
   border-radius: 0.5rem 0 0 0.5rem;
-  border-right: none;
   margin-left: 0.5rem;
 }
 .active {

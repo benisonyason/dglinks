@@ -7,6 +7,8 @@ import MessageBox from '../components/MessageBox';
 import { useDispatch, useSelector } from 'react-redux';
 import { listProducts } from '../actions/productActions';
 import { listTopSellers } from '../actions/userActions';
+import SearchBox from '../components/SearchBox';
+
 // import { Link } from 'react-router-dom';
 
 export default function HomeScreen() {
@@ -47,13 +49,18 @@ export default function HomeScreen() {
           </Carousel>
         </>
       )} */}
-      <h2>Featured Products</h2>
+
+      <h2>Products</h2>
       {loading ? (
         <LoadingBox></LoadingBox>
       ) : error ? (
         <MessageBox variant="danger">{error}</MessageBox>
       ) : (
         <>
+          <div>
+            <SearchBox />
+          </div>
+
           {products.length === 0 && <MessageBox>No Product Found</MessageBox>}
           <div className="row center">
             {products.map((product) => (
