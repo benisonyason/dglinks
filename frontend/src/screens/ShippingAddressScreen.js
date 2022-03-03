@@ -75,7 +75,7 @@ export default function ShippingAddressScreen(props) {
       <CheckoutSteps step1 step2></CheckoutSteps>
       <form className="form" onSubmit={submitHandler}>
         <div>
-          <h1>Shipping Address</h1>
+          <h1>Cutomer Details</h1>
         </div>
         <div>
           <label htmlFor="fullName">Full Name</label>
