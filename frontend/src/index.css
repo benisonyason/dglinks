@@ -27,7 +27,7 @@ body {
 }
 header {
   grid-area: header;
-  background-color: #71a3ee;
+  background-color: #1e56aa;
   height: fit-content;
 }
 main {
@@ -200,10 +200,10 @@ img.large {
   border: 0.1rem #c0c0c0 solid;
   background-color: #f8f8f8;
   border-radius: 0.5rem;
-  margin: 1rem;
+  margin: 0.5rem;
 }
 .card-body {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 .card-body > * {
   margin-bottom: 0.5rem;
