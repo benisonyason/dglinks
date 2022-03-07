@@ -50,7 +50,7 @@ export default function HomeScreen() {
         </>
       )} */}
       <div>
-        <Carousel autoPlay="true" autoFocus="true" showArrows="true" showThumbs="false" 
+        <Carousel autoPlay="true" autoFocus="true" showArrows={false} showThumbs={false} 
         >
           <div>
             <img src="images/geo.jpg" alt="" />
