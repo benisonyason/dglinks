@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-// import { Carousel } from 'react-responsive-carousel';
+import { Carousel } from 'react-responsive-carousel';
 import Product from '../components/Product';
 import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
@@ -49,6 +49,23 @@ export default function HomeScreen() {
           </Carousel>
         </>
       )} */}
+      <div>
+        <Carousel autoPlay="true" autoFocus="true" showArrows="true" showThumbs="false" 
+        >
+          <div>
+            <img src="images/geo.jpg" alt="" />
+            <p className="legend">GEOSPATIAL</p>
+          </div>
+          <div>
+            <img src="images/ict.jpg" alt="" />
+            <p className="legend">ICT</p>
+          </div>
+          <div>
+            <img src="images/eng.jpg" alt="" />
+            <p className="legend">Engineering</p>
+          </div>
+        </Carousel>
+      </div>
 
       <h2>Products</h2>
       {loading ? (
