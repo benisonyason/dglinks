@@ -52,16 +52,16 @@ export default function HomeScreen() {
       <div>
         <Carousel autoPlay="true" autoFocus="true" showArrows={false} showThumbs={false} 
         >
-          <div>
-            <img src="images/geo.jpg" alt="" />
+          <div className='corouseldiv'>
+            <img className="fill" src="images/geo.jpg" alt=""/>
             <p className="legend">GEOSPATIAL</p>
           </div>
-          <div>
-            <img src="images/ict.jpg" alt="" />
+          <div className='corouseldiv'>
+            <img className="fill" src="images/ict.jpg" alt="" />
             <p className="legend">ICT</p>
           </div>
-          <div>
-            <img src="images/eng.jpg" alt="" />
+          <div className='corouseldiv'>
+            <img className="fill" src="images/eng.jpg" alt="" />
             <p className="legend">Engineering</p>
           </div>
         </Carousel>

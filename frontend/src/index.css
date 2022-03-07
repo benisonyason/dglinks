@@ -195,6 +195,18 @@ img.large {
   width: 100%;
 }
 
+img.fill{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.corouseldiv {
+  padding: 1rem;
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
 /* Card */
 .card {
   border: 0.1rem #c0c0c0 solid;
