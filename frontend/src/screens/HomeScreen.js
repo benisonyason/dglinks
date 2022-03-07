@@ -66,7 +66,7 @@ export default function HomeScreen() {
           </div>
         </Carousel>
       </div>
-
+      <hr class="green"/>
       <h2>Products</h2>
       {loading ? (
         <LoadingBox></LoadingBox>

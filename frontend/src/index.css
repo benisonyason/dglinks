@@ -36,8 +36,11 @@ main {
 }
 footer {
   grid-area: footer;
-  background-color: #203040;
+  background-color: #2c9722;
   color: #ffffff;
+  font-size: 16px;
+  height: fit-content;
+  padding: 1rem;
 }
 /* Common */
 h1 {
@@ -179,6 +182,10 @@ button.close-sidebar {
   padding: 0.3rem 0.8rem;
 }
 
+hr.green {
+  border: 3px solid green;
+  border-radius: 5px;
+}
 /* Image */
 img {
   border-radius: 0.5rem;
@@ -206,6 +213,14 @@ img.fill{
   height: 100%;
   width: 100%;
   object-fit: fill;
+}
+
+.fa-facebook, .fa-twitter, .fa-google{
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
 }
 /* Card */
 .card {

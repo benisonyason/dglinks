@@ -314,7 +314,13 @@ function App() {
         </main>
         <footer className="row center">
           {userInfo && !userInfo.isAdmin && <ChatBox userInfo={userInfo} />}
-          <div>All right reserved dglinks 2021</div>{' '}
+          <div>All right reserved dglinks 2021<br />
+            <div className='row center'>
+              <i className="fa fa-facebook" />
+              <i className="fa fa-twitter" />
+              <i className="fa fa-google" />
+            </div></div>
+          {' '}
         </footer>
       </div>
     </BrowserRouter>
