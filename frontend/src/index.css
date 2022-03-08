@@ -204,7 +204,7 @@ img.medium {
   width: 100%;
 }
 img.large {
-  width: 100%;
+  width: 50%;
 }
 
 img.fill{
@@ -246,6 +246,7 @@ img.fill{
   color: #6316f1;
   text-shadow: 1px 1px 5px red;
   letter-spacing: 7px;
+  padding: 1rem;
 }
 .servicesLabel{
   font-size: 45px;
