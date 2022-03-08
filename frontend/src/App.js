@@ -6,6 +6,7 @@ import AdminRoute from './components/AdminRoute';
 import PrivateRoute from './components/PrivateRoute';
 import CartScreen from './screens/CartScreen';
 import HomeScreen from './screens/HomeScreen';
+import AboutUsScreen from './screens/AboutUsScreen';
 import OrderHistoryScreen from './screens/OrderHistoryScreen';
 import OrderScreen from './screens/OrderScreen';
 import PaymentMethodScreen from './screens/PaymentMethodScreen';
@@ -72,6 +73,9 @@ function App() {
             <SearchBox />
           </div> */}
           <div>
+            <Link to="/aboutus">
+            About Us
+            </Link>
             <Link to="/cart">
               Cart
               {cartItems.length > 0 && (
@@ -92,13 +96,13 @@ function App() {
                   </li>
                   <li>
                     <Link to="#signout" onClick={signoutHandler}>
-                      Sign Out
+                      Log Out
                     </Link>
                   </li>
                 </ul>
               </div>
             ) : (
-              <Link to="/signin">Sign In</Link>
+              <Link to="/signin">Log In</Link>
             )}
             {userInfo && userInfo.isSeller && (
               <div className="dropdown">
@@ -188,6 +192,7 @@ function App() {
             ></Route>
             <Route path="/signin" element={<SigninScreen />}></Route>
             <Route path="/register" element={<RegisterScreen />}></Route>
+            <Route path="/aboutus" element={<AboutUsScreen/>}></Route>
             <Route path="/shipping" element={<ShippingAddressScreen />}></Route>
             <Route path="/payment" element={<PaymentMethodScreen />}></Route>
             <Route path="/placeorder" element={<PlaceOrderScreen />}></Route>
@@ -316,9 +321,15 @@ function App() {
           {userInfo && !userInfo.isAdmin && <ChatBox userInfo={userInfo} />}
           <div>All right reserved dglinks 2021<br />
             <div className='row center'>
+              <Link to="/">
               <i className="fa fa-facebook" />
+              </Link>
+              <Link to="/">
               <i className="fa fa-twitter" />
+              </Link>
+              <Link to="/">
               <i className="fa fa-google" />
+              </Link>
             </div></div>
           {' '}
         </footer>
