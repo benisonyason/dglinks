@@ -30,23 +30,27 @@ export default function AboutUsScreen() {
       <div className="servicebox">
         <ul className="services">
           <div className='servicesLabel'>
-             <strong>Our Services</strong>
+            <strong>Our Services</strong>
           </div>
-         <Link to="/">
-         <li>Geospatial</li>
-         </Link>
-         <Link to="/">
-         <li>ICT</li>
-         </Link>
           <Link to="/">
-          <li>Engineering </li>
-         </Link>
+            <li>Geospatial</li>
+          </Link>
+          <Link to="/">
+            <li>ICT</li>
+          </Link>
+          <Link to="/">
+            <li>Engineering </li>
+          </Link>
         </ul>
       </div>
+      <hr class="green" />
       <div>
         <h1>
-        Our Office Address:
-        </h1>
+          Our Office Address:
+        </h1><br/>
+        <p>
+          No. 13 Doho Plaza, Adjacent Tunfure Police Station Gombe
+        </p>
       </div>
     </div>
   );
