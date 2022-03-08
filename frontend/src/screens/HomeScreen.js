@@ -16,44 +16,17 @@ export default function HomeScreen() {
   const productList = useSelector((state) => state.productList);
   const { loading, error, products } = productList;
 
-  // const userTopSellersList = useSelector((state) => state.userTopSellersList);
-  // const {
-  //   // loading: loadingSellers,
-  //   error: errorSellers,
-  //   users: sellers,
-  // } = userTopSellersList;
-
   useEffect(() => {
     dispatch(listProducts({}));
     dispatch(listTopSellers());
   }, [dispatch]);
   return (
     <div>
-      {/* <h2>Top Sellers</h2>
-      {loadingSellers ? (
-        <LoadingBox></LoadingBox>
-      ) : errorSellers ? (
-        <MessageBox variant="danger">{errorSellers}</MessageBox>
-      ) : (
-        <>
-          {sellers.length === 0 && <MessageBox>No Seller Found</MessageBox>}
-          <Carousel showArrows autoPlay showThumbs={false}>
-            {sellers.map((seller) => (
-              <div key={seller._id}>
-                <Link to={`/seller/${seller._id}`}>
-                  <img src={seller.seller.logo} alt={seller.seller.name} />
-                  <p className="legend">{seller.seller.name}</p>
-                </Link>
-              </div>
-            ))}
-          </Carousel>
-        </>
-      )} */}
       <div>
-        <Carousel autoPlay="true" autoFocus="true" showArrows={false} showThumbs={false} 
+        <Carousel autoPlay={true} autoFocus={true} showArrows={false} showThumbs={false}
         >
           <div className='corouseldiv'>
-            <img className="fill" src="images/geo.jpg" alt=""/>
+            <img className="fill" src="images/geo.jpg" alt="" />
             <p className="legend">GEOSPATIAL</p>
           </div>
           <div className='corouseldiv'>
@@ -66,7 +39,7 @@ export default function HomeScreen() {
           </div>
         </Carousel>
       </div>
-      <hr class="green"/>
+      <hr class="green" />
       <h2>Products</h2>
       {loading ? (
         <LoadingBox></LoadingBox>
